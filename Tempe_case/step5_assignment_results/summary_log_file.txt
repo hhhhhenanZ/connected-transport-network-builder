@@ -1,0 +1,4 @@
+no_nodes= 2782, no_zones = 44, FirstThruNode Node ID = 45, number_of_links = 4467
+read demand file demand.csv
+ mode type = auto, total_volume = 36060.000000
+CPU running time: 0 hours 0 minutes 0 seconds 10 ms

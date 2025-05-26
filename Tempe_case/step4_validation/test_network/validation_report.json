@@ -1,0 +1,423 @@
+{
+  "summary": {
+    "total": 57,
+    "errors": 2,
+    "warnings": 19,
+    "success": 8,
+    "info": 28
+  },
+  "errors": [
+    {
+      "message": "Average network speed (3.7 mph) is unreasonably low",
+      "field": "assignment",
+      "details": {
+        "avg_speed": 3.7459589239079922
+      }
+    },
+    {
+      "message": "Found 11 links (0.2%) with invalid doc values (<0 or >4)",
+      "field": "assignment",
+      "details": {
+        "invalid_doc_count": 11,
+        "invalid_doc_percent": 0.24625027982986344,
+        "example_links": [
+          193,
+          829,
+          1400,
+          1683,
+          1684
+        ]
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "message": "mode_type.csv file not found",
+      "field": "mode_type",
+      "details": {}
+    },
+    {
+      "message": "Low number of iterations (1) may lead to poor convergence",
+      "field": "number_of_iterations in settings.csv",
+      "details": {}
+    },
+    {
+      "message": "Found 1333 links with unusually high hourly capacity (>3000)",
+      "field": "capacity",
+      "details": {
+        "high_capacity_count": 1333,
+        "example_links": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "message": "Found 302 links with unusually high capacity per lane (>2500)",
+      "field": "capacity",
+      "details": {
+        "high_cap_per_lane_count": 302,
+        "example_links": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "message": "Link type 1 has large capacity variation (min=2300.0, max=16100.0)",
+      "field": "capacity",
+      "details": {
+        "link_type": 1,
+        "capacity_min": 2300.0,
+        "capacity_max": 16100.0,
+        "capacity_mean": 6860.115606936416,
+        "count": 519.0
+      }
+    },
+    {
+      "message": "Link type 4 has large capacity variation (min=1600.0, max=11200.0)",
+      "field": "capacity",
+      "details": {
+        "link_type": 4,
+        "capacity_min": 1600.0,
+        "capacity_max": 11200.0,
+        "capacity_mean": 4634.945705824284,
+        "count": 2026.0
+      }
+    },
+    {
+      "message": "Link type 5 has large capacity variation (min=1200.0, max=6000.0)",
+      "field": "capacity",
+      "details": {
+        "link_type": 5,
+        "capacity_min": 1200.0,
+        "capacity_max": 6000.0,
+        "capacity_mean": 1662.374245472837,
+        "count": 994.0
+      }
+    },
+    {
+      "message": "Found 2037 links with inconsistent length/vdf_length_mi conversion (>5% difference, avg=inf%)",
+      "field": "length",
+      "details": {
+        "inconsistent_count": 2037,
+        "example_links": [
+          58,
+          104,
+          106,
+          126,
+          148
+        ],
+        "example_meters": [
+          21.436033779078155,
+          53.77340195412434,
+          7.413472737927722,
+          3.275351924422573,
+          1.6290108961012244
+        ],
+        "example_miles": [
+          0.01,
+          0.03,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "example_diffs": [
+          33.19766972223493,
+          11.377753104014365,
+          Infinity,
+          Infinity,
+          Infinity
+        ]
+      }
+    },
+    {
+      "message": "Found 932 links with inconsistent free_speed/vdf_free_speed_mph conversion (>5% difference, avg=6.52%)",
+      "field": "free_speed",
+      "details": {
+        "inconsistent_count": 932,
+        "example_links": [
+          160,
+          161,
+          177,
+          239,
+          240
+        ],
+        "example_kmh": [
+          60,
+          60,
+          60,
+          60,
+          60
+        ],
+        "example_mph": [
+          35.0,
+          35.0,
+          35.0,
+          35.0,
+          35.0
+        ],
+        "example_diffs": [
+          6.521040568538297,
+          6.521040568538297,
+          6.521040568538297,
+          6.521040568538297,
+          6.521040568538297
+        ]
+      }
+    },
+    {
+      "message": "Found 2139 links with inconsistent vdf_fftt calculation (>5% difference, avg=20.46%)",
+      "field": "vdf_fftt",
+      "details": {
+        "inconsistent_count": 2139,
+        "example_links": [
+          57,
+          58,
+          66,
+          94,
+          104
+        ],
+        "example_fftt": [
+          0.03,
+          0.01,
+          0.05,
+          0.28,
+          0.04
+        ],
+        "example_calc_fftt": [
+          0.03272727272727273,
+          0.01090909090909091,
+          0.05454545454545454,
+          0.2945454545454546,
+          0.03272727272727273
+        ],
+        "example_diffs": [
+          8.797653958944293,
+          8.264462809917362,
+          8.91265597147949,
+          5.176318343578143,
+          17.73835920177383
+        ]
+      }
+    },
+    {
+      "message": "Found 48 demand records with zero or negative volume",
+      "field": "volume",
+      "details": {
+        "invalid_volume_count": 48
+      }
+    },
+    {
+      "message": "Missing 'obs_volume' field in link file. This is required for ODME.",
+      "field": "obs_volume",
+      "details": {}
+    },
+    {
+      "message": "Found 3 OD pairs with very high distance ratios (>5.0) - extremely circuitous routes",
+      "field": "accessibility_distance",
+      "details": {
+        "very_high_count": 3,
+        "example_pairs": [
+          [
+            11.0,
+            12.0,
+            4.1834,
+            0.806621,
+            5.18633
+          ],
+          [
+            1.0,
+            3.0,
+            5.03617,
+            0.971336,
+            5.18479
+          ],
+          [
+            3.0,
+            1.0,
+            5.03617,
+            0.971336,
+            5.18479
+          ]
+        ]
+      }
+    },
+    {
+      "message": "mode_type.csv not loaded. Cannot check demand-performance connectivity.",
+      "field": "accessibility",
+      "details": {}
+    },
+    {
+      "message": "Found 60 routes (11.8%) with extremely high congestion (>5x free flow time)",
+      "field": "route_assignment",
+      "details": {
+        "high_congestion_count": 60,
+        "high_congestion_percent": 11.834319526627219,
+        "example_routes": [
+          [
+            1.0,
+            10.0,
+            33.82912723449001
+          ],
+          [
+            2.0,
+            10.0,
+            28.82949061662198
+          ],
+          [
+            3.0,
+            10.0,
+            30.238967136150237
+          ],
+          [
+            6.0,
+            10.0,
+            45.294736842105266
+          ],
+          [
+            7.0,
+            10.0,
+            49.07781201848998
+          ]
+        ]
+      }
+    },
+    {
+      "message": "Found 130 links (2.9%) with very low speeds (<5 mph)",
+      "field": "assignment",
+      "details": {
+        "very_slow_count": 130,
+        "very_slow_percent": 2.910230579807477
+      }
+    },
+    {
+      "message": "Found 7 links (0.2%) with excessive congestion duration (P > 5 hours)",
+      "field": "assignment",
+      "details": {
+        "high_p_count": 7,
+        "high_p_percent": 0.15670472352809492,
+        "example_links": [
+          829,
+          1683,
+          1684,
+          1685,
+          1686
+        ]
+      }
+    },
+    {
+      "message": "Column 'ref_volume' not found or empty in link.csv. Cannot perform ref_volume and volume comparison.",
+      "field": "ref_volume",
+      "details": {}
+    },
+    {
+      "message": "Found 60 routes (11.8%) with extremely high congestion (>5x free flow time)",
+      "field": "route_assignment",
+      "details": {
+        "high_congestion_count": 60,
+        "high_congestion_percent": 11.834319526627219,
+        "example_routes": [
+          [
+            1.0,
+            10.0,
+            33.82912723449001
+          ],
+          [
+            2.0,
+            10.0,
+            28.82949061662198
+          ],
+          [
+            3.0,
+            10.0,
+            30.238967136150237
+          ],
+          [
+            6.0,
+            10.0,
+            45.294736842105266
+          ],
+          [
+            7.0,
+            10.0,
+            49.07781201848998
+          ]
+        ]
+      }
+    }
+  ],
+  "success": [
+    {
+      "message": "Nodes are correctly sorted by node_id in ascending order",
+      "field": "node_id",
+      "details": {}
+    },
+    {
+      "message": "Links are correctly sorted by from_node_id in ascending order",
+      "field": "from_node_id",
+      "details": {}
+    },
+    {
+      "message": "Links are correctly sorted by to_node_id within from_node_id groups",
+      "field": "to_node_id",
+      "details": {}
+    },
+    {
+      "message": "Zone centroids are correctly listed before physical nodes in non-decreasing order",
+      "field": "zone_id",
+      "details": {}
+    },
+    {
+      "message": "All zones in demand file exist in node file",
+      "field": "zone_id",
+      "details": {}
+    },
+    {
+      "message": "Link performance validation completed successfully with reasonable metrics",
+      "field": "assignment",
+      "details": {}
+    },
+    {
+      "message": "Route assignment validation completed successfully with proper path distributions",
+      "field": "route_assignment",
+      "details": {}
+    },
+    {
+      "message": "Traffic assignment validation (Level 7) completed successfully",
+      "field": "level_7",
+      "details": {}
+    }
+  ],
+  "info": [
+    {
+      "message": "Found settings.csv with 1 configuration rows",
+      "field": "settings",
+      "details": {}
+    },
+    {
+      "message": "VDF free speed values appear to be in mph (mean: 40.90, range: 15.0-75.0)",
+      "field": "vdf_free_speed_mph",
+      "details": {}
+    },
+    {
+      "message": "Length values appear to be in meters (mean: 194.16, range: 1.6290108961012244-2166.0)",
+      "field": "length",
+      "details": {}
+    },
+    {
+      "message": "VDF length values appear to be in miles (mean: 0.12, range: 0.0-1.35)",
+      "field": "vdf_length_mi",
+      "details": {}
+    },
+    {
+      "message": "Capacity values range from 1200 to 99999 (mean: 10708.73)",
+      "field": "capacity",
+      "details": {
+        "min": 

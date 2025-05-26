@@ -1,0 +1,2 @@
+mode_type,total_volume,PMT (VMT in miles),PHT (VHT in hours),Delay (hours),TTI,avg_distance_mile,avg_distance_km,avg_travel_time_min,avg_travel_delay_in_min,avg_speed_mph,avg_speed_kmph
+auto,35450,179342,6753,2741.55,1.68343,5.05902,8.13997,11.4296,4.64014,26.5575,42.7309
