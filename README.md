@@ -4,9 +4,8 @@ This project builds a connected transportation network for DTALite traffic assig
 
 ---
 ### Authors
-<sub>
+
 Henan Zhu, Xuesong (Simon) Zhou, Han Zheng
-</sub>
 
 Email: <a href="mailto:henanzhu@asu.edu">henanzhu@asu.edu</a>, 
 <a href="mailto:xzhou74@asu.edu">xzhou74@asu.edu</a>, 
