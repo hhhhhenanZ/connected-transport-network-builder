@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <title>Map1</title>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>Boundaries of Census Tracts (2020) in the City of Tempe.Please note that Tract boundaries have been clipped to the City of Tempe boundary and may not represent the full size or shape of the Tract. </abstract>
+            <purpose>Boundaries of Census Tracts (2020) in the City of Tempe.</purpose>
+        </descript>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>US Census</themekey>
+                <themekey>Boundaries</themekey>
+                <themekey>Census</themekey>
+                <themekey>tracts</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>This work is licensed under a Creative Commons Attribution 4.0 International License.</useconst>
+        <datacred>City of Tempe, AZ; U.S. Census Bureau</datacred>
+    </idinfo>
+    <metainfo>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
