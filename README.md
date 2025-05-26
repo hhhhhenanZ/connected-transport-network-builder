@@ -3,9 +3,16 @@
 This project builds a connected transportation network for DTALite traffic assignment tools by combining road network data (from OpenStreetMap) with Zone (Traffic Analysis Zone/ Census Tracts) data. The final outputs are GMNS-compatible files (`node.csv`, `link.csv`, etc.) that can be used for traffic simulation (e.g., in DTALite).
 
 ---
-## Authors
-Henan Zhu, Xuesong (Simon) Zhou, Han Zheng  
-Email: henanzhu@asu.edu, xzhou74@asu.edu, hzheng73@asu.edu
+### Authors
+<sub>
+Henan Zhu, Xuesong (Simon) Zhou, Han Zheng
+</sub>
+
+Email: <a href="mailto:henanzhu@asu.edu">henanzhu@asu.edu</a>, 
+<a href="mailto:xzhou74@asu.edu">xzhou74@asu.edu</a>, 
+<a href="mailto:hzheng73@asu.edu">hzheng73@asu.edu</a>
+</sub>
+
 ---
 
 ## 🧰 Prerequisites
