@@ -157,6 +157,30 @@ This includes required fields and formatting for:
 > ⚠️ Files must strictly follow GMNS standards for successful DTALite traffic assignment.
 
 ---
+## 🌐 Related Projects and Applications
+
+### 🔧 [Shp2gmns](https://github.com/yuxl7/Shp2gmns)
+
+> *Convert Shapefiles to GMNS Format*
+
+[Shp2gmns](https://github.com/yuxl7/Shp2gmns) is a Python-based tool designed to convert road network shapefiles into GMNS (General Modeling Network Specification) format. It simplifies the preprocessing of geospatial road data for transportation modeling, making it ideal for researchers and practitioners working with GIS-based road datasets.
+
+You can use **Shp2gmns** as a complementary tool to this 
+repository when your input data is in shapefile format instead of OSM. The generated GMNS-format files (e.g., `node.csv`, `link.csv`) can then be enriched using **this tool** (`Connector_Generation.py`) to integrate with zone data and build connected networks for DTALite or other traffic assignment workflows.
+
+---
+
+### 🗺️ [GMNS Plus Dataset](https://github.com/HanZhengIntelliTransport/GMNS_Plus_Dataset)
+
+> *Standardized Multimodal GMNS Network Collection*
+
+The [GMNS Plus Dataset](https://github.com/HanZhengIntelliTransport/GMNS_Plus_Dataset) is a curated collection of GMNS-formatted transportation networks for various cities and regions (e.g., Phoenix, Bay Area, Berlin). It is designed to support reproducible, standardized research in transportation modeling.
+
+🔗 This repository contributes to the GMNS Plus Dataset by generating clean, connected network files through [`osm2gmns`](https://github.com/jiawlu/OSM2GMNS) processing, generating connector links between zones and the physical network, and formatting outputs for DTALite-based traffic assignment workflows.
+
+Look for networks where this tool helped preprocess and enhance spatial linkage between zones and road infrastructure.
+
+---
 ### 📦 Save or Share the Environment
 To save your environment to a file:
 ```bash
